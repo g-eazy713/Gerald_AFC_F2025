@@ -1,2 +1,1 @@
-# Gerald_AFC_F2025
-Class Project Repository
+My Favorite Drink is High Quality H2O
