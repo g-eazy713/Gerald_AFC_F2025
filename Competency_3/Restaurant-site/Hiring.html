@@ -1,10 +1,235 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <a href="index.html">Main Page</a>  <a href="menu.html">Menu Page</a>
+    <link rel="icon" href="images/pizza.jpeg" type="image/jpeg" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hiring ad</title>
 </head>
 <body>
-$END$
+<h1>Now Hiring</h1>
+
+<form>
+    <label>
+        First Name:
+        <input
+                type = "text"
+                placeholder = "Enter First Name"
+                id = "Fname"
+                minlength="1"
+                maxlength="20"
+                required
+        />
+    </label>
+    <br>
+    <label>
+        Last Name:
+        <input
+                type = "text"
+                placeholder = "(optional)"
+                id = "Lname"
+                minlength="2"
+                maxlength="20"
+
+        />
+    </label>
+    <br><br>
+    <label>
+        Address 1:
+        <input
+                type = "text"
+                name = "name"
+                placeholder = "Mailing Address"
+                id = "address1"
+                required
+        />
+    </label>
+    <br>
+    <label>
+        Address 2:
+        <input
+                type = "text"
+                name = "name"
+                placeholder = "(Optional)"
+                id = "address2"
+        />
+    </label>
+    <br>
+
+    <label>
+        City:
+        <input
+                type = "text"
+                name = "name"
+                placeholder = "City"
+                id = "City"
+                maxlength="29"
+                required
+        />
+    </label>
+
+    <label>
+        State:
+    <select
+        name = "state"
+        id = "state"
+        required
+        >
+        <option value = " "></option>
+        <option value="Alabama">AL</option>
+        <option value="Alaska">AK</option>
+        <option value="Arizona">AZ</option>
+        <option value="Arkansas">AR</option>
+        <option value="California">C</option>
+        <option value="Colorado">CO</option>
+        <option value="Connecticut">CT</option>
+        <option value="Delaware">DE</option>
+        <option value="Florida">FL</option>
+        <option value="Georgia">GA</option>
+        <option value="Hawaii">HI</option>
+        <option value="Idaho">ID</option>
+        <option value="Illinois">IL</option>
+        <option value="Indiana">IN</option>
+        <option value="Iowa">IA</option>
+        <option value="Kansas">KS</option>
+        <option value="Kentucky">KE</option>
+        <option value="Louisiana">LA</option>
+        <option value="Maine">MA</option>
+        <option value="Maryland">MD</option>
+        <option value="Massachusetts">MA</option>
+        <option value="Michigan">MI</option>
+        <option value="Minnesota">MN</option>
+        <option value="Mississippi">MS</option>
+        <option value="Missouri">MO</option>
+        <option value="Montana">MT</option>
+        <option value="Nebraska">NE</option>
+        <option value="Nevada">NV</option>
+        <option value="New Hampshire">NH</option>
+        <option value="New Jersey">NJ</option>
+        <option value="New Mexico">NN</option>
+        <option value="New York">NY</option>
+        <option value="North Carolina">NC</option>
+        <option value="North Dakota">ND</option>
+        <option value="Ohio">OH</option>
+        <option value="Oklahoma">OK</option>
+        <option value="Oregon">OR</option>
+        <option value="Pennsylvania">PA</option>
+        <option value="Rhode Island">RM</option>
+        <option value="South Carolina">SC</option>
+        <option value="South Dakota">SD</option>
+        <option value="Tennessee">TN</option>
+        <option value="Texas">TX</option>
+        <option value="Utah">UT</option>
+        <option value="Vermont">VT</option>
+        <option value="Virginia">VA</option>
+        <option value="Washington">WA</option>
+        <option value="West Virginia">WV</option>
+        <option value="Wisconsin">WI</option>
+        <option value="Wyoming">WY</option>
+
+    </select>
+        <br><br>
+    <label for = "age">Age:
+        <input
+                type = "number"
+                name = "age"
+                placeholder = "Enter Age"
+                id = "Age"
+                minlength="2"
+                maxlength="3"
+        />
+    </label>
+    <br>
+    <label>
+        Phone Number:
+        <input
+                type = "number"
+                name = "Phone Number"
+                placeholder = "###-###-###"
+                id = "phone"
+                pattern="[0-9]{3}-[0-9]{3}"
+                oninvalid="this.setCustomValidity('Please enter valid phone number')"
+                minlength="9"
+                maxlength="9"
+
+        />
+    </label>
+    <br><br>
+       Email:
+        <input
+                type = "email"
+                name = "email"
+                placeholder = "Enter email"
+                id = "email"
+                required
+        />
+    </label>
+    <br>
+    Password:
+    <input
+            type = "password"
+            name = "password"
+            id = "password"
+            placeholder = "Enter password"
+            pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,12}$"
+            title="Password must be at least 8 characters long and include at least one uppercase letter, one lowercase letter, one number, and one special character."
+            required
+    />
+    </label>
+    <br><br>
+    <label>
+        Are you Married:
+        <input type = "radio" name = "Is married" value = "Married">Yes
+        <input type = "radio" name = "Is married" value = "not Married" checked>No
+        <input type= "radio" name = "Is married" value = "Complicated">Complicated
+    </label>
+    <br>
+    <form>
+        <h3>Favorite Color</h3>
+        <label>
+            <input
+                    type="checkbox"
+                    name="color"
+                    value="red"> Red
+            <br>
+            <input
+                    type="checkbox"
+                    name="color"
+                    value="blue"> Blue
+            <br>
+            <input
+                    type="checkbox"
+                    name="color"
+                    value="green"> Green
+            <br>
+            <input
+                    type="checkbox"
+                    name="color"
+                    value="yellow"> Yellow
+            <br>
+            <input
+                    type="checkbox"
+                    name="color"
+                    value="purple"> Purple
+        </label>
+        <br><br>
+        <label>
+                Any Information You Want To Add:
+        </label>
+        <br>
+        <textarea
+            rows="4"
+            cols="30"
+            maxlength="30"
+            placeholder="Enter your message here"></textarea>
+
+    </form>
+    <br>
+    <button type="submit">Submit</button>
+    <button type="reset">Reset</button>
+
+</form>
 </body>
+
 </html>

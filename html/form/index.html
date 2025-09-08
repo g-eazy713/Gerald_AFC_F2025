@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>form</title>
+</head>
+<body>
+
+<!--mass amount of data you have to use a post
+"get" will only get 242 characters worth of data
+"Post" can also receive photos and "get" cannot-->
+
+<!--"form" command will be used to post data and get data-->
+<!--You need route handlers that will read the post and get methods to retrieve data-->
+<form action = "/api/newData" method = "get">
+<!--    if we want a first name-->
+    <label>
+            First Name:
+        <input
+                type = "text"
+                name = "Gerald"
+                placeholder = "Enter First Name"
+                id = "Fname"
+                minlength="2"
+                maxlength="20"
+        />
+    </label>
+    <hr>
+    <!--button has to be INSIDE the form action, usually towards the bottom-->
+
+    <label>
+            Last Name:
+        <input
+                type = "text"
+                name = "name"
+                placeholder = "Enter Last Name"
+                id = "Lname"
+                minlength="2"
+                maxlength="20"
+        />
+    </label>
+    <hr>
+    <label for = "age">Age:
+        <input
+                type = "number"
+                name = "age"
+                placeholder = "Enter Age"
+                id = "Age"
+                minlength="2"
+                maxlength="3"
+        />
+    </label>
+    <hr>
+    <label>
+        Phone Number:
+        <input
+                type = "number"
+                name = "Phone Number"
+                placeholder = "###-###-###"
+                id = "phone"
+                pattern="[0-9]{3}-[0-9]{3}"
+                oninvalid="this.setCustomValidity('Please enter valid phone number')"
+                minlength="9"
+                maxlength="9"
+
+        />
+    </label>
+    <hr>
+    <label>
+    Are you Married:
+    <input type = "radio" name = "Is married" value = "Married">Yes
+    <input type = "radio" name = "Is married" value = "not Married">No
+    <input type= "radio" name = "Is married" value = "Complicated">Complicated
+    </label>
+
+    <hr>
+
+    <button type="submit">Submit</button>
+    <button type="reset">Reset</button>
+
+</form>
+
+</body>
+
+</html>
