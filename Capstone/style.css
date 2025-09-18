@@ -1,0 +1,149 @@
+
+/*Color Scheme was as a marketing tactic to have people feel hungry which would make them
+want to order a pizza. Colors that have been linked to hunger cravings are Red and Yellow.
+ I also added some green in the search bar and when you hover over the nav bar items. */
+.navbar a {
+    color: firebrick;
+    padding: 0.5rem 1rem;
+    display: inline-block;
+}
+.navbar a:hover {
+    color: darkgreen;
+}
+
+/*homepage styling*/
+body {
+    font-family: "Sofia", sans-serif;
+    font-size: 30px;
+    background-color: yellow;
+    text-align: center;
+}
+
+.banner {
+    margin: auto;
+    width: 70%;
+    height: 40%;
+}
+
+.banner img {
+    border: solid black 20px;
+    width: 50%;
+    height: 40%;
+}
+
+.content {
+    text-align: center;
+}
+
+.content h1 {
+    margin-top: 25px;
+    font-size: 40px;
+    color: red;
+    margin-bottom: 15px;
+}
+
+.content p {
+    font-size: 30px;
+    color: #333;
+    max-width: 700px;
+    margin: auto;
+}
+
+/*Menu Styling*/
+/*Went with white lettering to pop with the darker background image.*/
+.Menu {
+    /*background image applied to menu */
+    background-image: url("Images/background.jpg");
+    text-align: center;
+    color: ghostwhite;
+    margin-bottom: 15px;
+    background-size: cover;
+    background-position: center top -10px;
+    font-family: "Sofia", sans-serif;
+}
+.menu-container{
+    padding-top: 30px;
+}
+/*Button styling. wanted to make the cursor change, bigger lettering for ease of use,
+ background to match as close to picture background.*/
+button {
+    padding: 10px 20px;
+    font-size: 26px;
+    cursor: pointer;
+    border-radius: 8px;
+    border: none;
+    background: #264653;
+    color: white;
+    margin: 0 10px;
+    transition: background 0.3s ease;
+}
+/*added to allow the user to see a visual change when next to button. */
+button:hover {
+    background: firebrick;
+}
+
+
+
+/*Now Hiring styling */
+form {
+    max-width: 500px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 4px;
+    box-sizing: border-box;
+}
+
+.error {
+    color: red;
+    font-size: 0.9em;
+}
+
+.char-counter {
+    font-size: 0.85em;
+    color: gray;
+    text-align: right;
+}
+
+.Hiring {
+    border-bottom: black solid;
+    text-align: left;
+    font-size: 20px;
+    color: #333;
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+}
+.Hiring h2 {
+    border-bottom: black solid;
+    font-size: 45px;
+    text-align: center;
+    color: red;
+    margin-bottom: 15px;
+    padding: 20px;
+
+}
+/*I wanted the favorite color block to be different from the other questions
+added padding top and bottom to give it more spacing. */
+.FavoriteColor {
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    margin-top: 2px;
+    gap: 4px;
+    padding-bottom: 20px;
+}
+/*aligned buttons horizontally to match radio buttons. */
+.isMarriedButton {
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+}

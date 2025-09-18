@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <link rel="icon" href="images/pizza.jpeg" type="image/jpeg" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hiring ad</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=fire">
+    <script src="https://kit.fontawesome.com/c022196c0d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark border-bottom border-body" data-bs-theme="dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="homepage.html">
+            <img src="images/pizza%20bros%20home%20page.jpeg" width="70" height="70" alt="Pizza logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Pizza Map
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="menu.html">Menu Page</a></li>
+                        <li><a class="dropdown-item" href="homepage.html">Home Page</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class ="Hiring">
+<!--    Font Awesome used for pizza slices in title-->
+    <h2><i class="fa-solid fa-pizza-slice"></i>Application Form<i class="fa-solid fa-pizza-slice"></i></h2>
+    <form id="nowHiringForm">
+
+        <label>
+        First Name:
+        <input
+                type = "text"
+                placeholder = "Enter First Name"
+                id = "Fname"
+                minlength="1"
+                maxlength="20"
+                required
+        />
+        </label>
+        <label>
+        Last Name:
+        <input
+                type = "text"
+                placeholder = "(Optional)"
+                id = "Lname"
+                minlength="2"
+                maxlength="20"
+
+        />
+        </label>
+        <label>
+        Address 1:
+        <input
+                type = "text"
+                name = "name"
+                placeholder = "Enter Mailing Address"
+                id = "address1"
+                required
+        />
+        </label>
+        <label>
+        Address 2:
+        <input
+                type = "text"
+                name = "name"
+                placeholder = "(Optional)"
+                id = "address2"
+        />
+        </label>
+        <label>
+        City:
+        <input
+                type = "text"
+                name = "name"
+                placeholder = "City"
+                id = "City"
+                maxlength="29"
+                required
+        />
+        </label>
+        <label>
+        State:
+            <select
+                    name = "state"
+                    id = "state"
+                    required
+            >
+                <option value = ""></option>
+                <option value="Alabama">AL</option>
+                <option value="Alaska">AK</option>
+                <option value="Arizona">AZ</option>
+                <option value="Arkansas">AR</option>
+                <option value="California">C</option>
+                <option value="Colorado">CO</option>
+                <option value="Delaware">DE</option>
+                <option value="Florida">FL</option>
+                <option value="Hawaii">HI</option>
+                <option value="Idaho">ID</option>
+                <option value="Indiana">IN</option>
+                <option value="Iowa">IA</option>
+                <option value="Kansas">KS</option>
+                <option value="Kentucky">KE</option>
+                <option value="Maine">MA</option>
+                <option value="Massachusetts">MA</option>
+                <option value="Michigan">MI</option>
+                <option value="Mississippi">MS</option>
+                <option value="Montana">MT</option>
+                <option value="Nebraska">NE</option>
+                <option value="Nevada">NV</option>
+                <option value="New Hampshire">NH</option>
+                <option value="New Jersey">NJ</option>
+                <option value="New Mexico">NN</option>
+                <option value="New York">NY</option>
+                <option value="North Carolina">NC</option>
+                <option value="North Dakota">ND</option>
+                <option value="Ohio">OH</option>
+                <option value="Oklahoma">OK</option>
+                <option value="Oregon">OR</option>
+                <option value="Pennsylvania">PA</option>
+                <option value="South Carolina">SC</option>
+                <option value="South Dakota">SD</option>
+                <option value="Tennessee">TN</option>
+                <option value="Texas">TX</option>
+                <option value="Utah">UT</option>
+                <option value="Vermont">VT</option>
+                <option value="Virginia">VA</option>
+                <option value="Washington">WA</option>
+                <option value="Wisconsin">WI</option>
+                <option value="Wyoming">WY</option>
+            </select>
+        </label>
+        <label for = "age">Age:
+            <input
+                type = "text"
+                name = "age"
+                placeholder = "Enter Age"
+                id = "Age">
+            <span class = "error" id = "AgeError"></span>
+        </label>
+        <label>
+        Phone Number:
+        <input
+                type = "text"
+                name = "Phone Number"
+                placeholder = "xxx-yyy-zzzz"
+                id = "phone">
+            <span class="error" id="phoneError"></span>
+    </label>
+        <label>
+            Email:
+            <input
+                type = "email"
+                name = "email"
+                placeholder = "Enter email"
+                id = "email"
+            />
+        </label>
+        <label>
+            Password:
+            <input
+            type = "password"
+            name = "password"
+            id = "password"
+            placeholder = "Enter password"
+            pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,12}$"
+            title="Password must be at least 8 characters long and include at least one uppercase letter, one lowercase letter, one number, and one special character."
+            required
+            />
+        </label>
+        <label class = "isMarriedButton">
+        Are you Married:
+        <input type = "radio" name = "Is married" value = "Married">Yes
+        <input type = "radio" name = "Is married" value = "not Married" checked>No
+        <input type= "radio" name = "Is married" value = "Complicated">Complicated
+        </label>
+
+        <label class ="FavoriteColor">
+            Favorite Color
+                <input type="checkbox" name="color" value="red"> Red
+                <input type="checkbox" name="color" value="blue"> Blue
+                <input type="checkbox" name="color" value="green"> Green
+                <input type="checkbox" name="color" value="yellow"> Yellow
+                <input type="checkbox" name="color" value="purple"> Purple
+
+        </label>
+        <label>
+            More Info:
+            <textarea name="moreInfo" id="moreInfo" rows="4" placeholder="Enter Text Here"></textarea>
+            <div class="char-counter" id="charCounter">30 characters remaining</div>
+            <span class="error" id="moreInfoError"></span>
+        </label>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+</body>
+
+</html>
