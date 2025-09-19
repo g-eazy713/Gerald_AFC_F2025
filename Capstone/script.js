@@ -8,6 +8,9 @@ const phoneError = document.getElementById('phoneError');
 const moreInfoInput = document.getElementById('moreInfo');
 const moreInfoError = document.getElementById('moreInfoError');
 const charCounter = document.getElementById('charCounter');
+const selectedRadio = form.querySelector('input[name="isMarried"]:checked');
+const isMarriedValue = selectedRadio ? selectedRadio.value : null;
+
 
 moreInfoInput.addEventListener('input', () => {
     charCounter.textContent = `${30 - moreInfoInput.value.length} characters remaining`;
@@ -53,12 +56,12 @@ form.addEventListener('submit', (e) => {
 
     if (isValid) {
         const formData = {
-            firstName: firstNameInput.valueOf(),
-            lastName: lastNameInput.valueOf(),
+            firstName: firstNameInput.value.trim(),
+            lastName: lastNameInput.value.trim(),
             age: age,
             phone: phoneInput.value.trim(),
-            moreInfo: moreInfoInput.valueOf(),
-            isMarried: form.querySelector('input[name="isMarried"]:checked'),
+            moreInfo: moreInfoInput.value.trim(),
+            isMarried: isMarriedValue,
             colors: Array.from(form.querySelectorAll('input[name="color"]:checked')).map(cb => cb.value)
         };
         console.log('Form Submission:', formData);
@@ -66,7 +69,6 @@ form.addEventListener('submit', (e) => {
         form.reset();
         charCounter.textContent = '30 characters remaining';
     }
-
 });
 
 

@@ -13,7 +13,7 @@
 <body>
 <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark border-bottom border-body" data-bs-theme="dark">
     <div class="container-fluid">
-        <a class="navbar-brand" href="homepage.html">
+        <a class="navbar-brand" href="index.html">
             <img src="images/pizza%20bros%20home%20page.jpeg" width="70" height="70" alt="Pizza logo"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -26,7 +26,7 @@
                     </a>
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="menu.html">Menu Page</a></li>
-                        <li><a class="dropdown-item" href="homepage.html">Home Page</a></li>
+                        <li><a class="dropdown-item" href="index.html">Home Page</a></li>
                     </ul>
                 </li>
             </ul>
@@ -36,8 +36,11 @@
 <div class ="Hiring">
 <!--    Font Awesome used for pizza slices in title-->
     <h2><i class="fa-solid fa-pizza-slice"></i>Application Form<i class="fa-solid fa-pizza-slice"></i></h2>
+
+<!--    Form Starts Here with all info needed for Applicant-->
     <form id="nowHiringForm">
 
+<!--        Enter First Name-->
         <label>
         First Name:
         <input
@@ -49,6 +52,8 @@
                 required
         />
         </label>
+
+<!--        Enter Last Name-->
         <label>
         Last Name:
         <input
@@ -60,6 +65,7 @@
 
         />
         </label>
+<!--        Enter Address-->
         <label>
         Address 1:
         <input
@@ -70,6 +76,7 @@
                 required
         />
         </label>
+<!--        Optional Address-->
         <label>
         Address 2:
         <input
@@ -79,6 +86,7 @@
                 id = "address2"
         />
         </label>
+<!--        Enter City-->
         <label>
         City:
         <input
@@ -86,10 +94,10 @@
                 name = "name"
                 placeholder = "City"
                 id = "City"
-                maxlength="29"
                 required
         />
         </label>
+<!--        Enter State-->
         <label>
         State:
             <select
@@ -141,23 +149,26 @@
                 <option value="Wyoming">WY</option>
             </select>
         </label>
+<!--        Enter Age-->
         <label for = "age">Age:
             <input
-                type = "text"
+                type = "number"
                 name = "age"
                 placeholder = "Enter Age"
                 id = "Age">
             <span class = "error" id = "AgeError"></span>
         </label>
+<!--        Enter Phone Number-->
         <label>
         Phone Number:
         <input
-                type = "text"
+                type = "tel"
                 name = "Phone Number"
                 placeholder = "xxx-yyy-zzzz"
                 id = "phone">
             <span class="error" id="phoneError"></span>
     </label>
+<!--        Enter Email-->
         <label>
             Email:
             <input
@@ -167,6 +178,7 @@
                 id = "email"
             />
         </label>
+<!--        Enter Password-->
         <label>
             Password:
             <input
@@ -179,13 +191,14 @@
             required
             />
         </label>
+<!--        Is Married?-->
         <label class = "isMarriedButton">
         Are you Married:
-        <input type = "radio" name = "Is married" value = "Married">Yes
-        <input type = "radio" name = "Is married" value = "not Married" checked>No
-        <input type= "radio" name = "Is married" value = "Complicated">Complicated
+        <input type = "radio" name = "isMarried" value = "Married">Yes
+        <input type = "radio" name = "isMarried" value = "not Married" checked>No
+        <input type= "radio" name = "isMarried" value = "Complicated">Complicated
         </label>
-
+<!--        Select Favorite Color-->
         <label class ="FavoriteColor">
             Favorite Color
                 <input type="checkbox" name="color" value="red"> Red
@@ -195,18 +208,21 @@
                 <input type="checkbox" name="color" value="purple"> Purple
 
         </label>
+<!--        If Applicant wants to add more Info-->
         <label>
             More Info:
             <textarea name="moreInfo" id="moreInfo" rows="4" placeholder="Enter Text Here"></textarea>
             <div class="char-counter" id="charCounter">30 characters remaining</div>
             <span class="error" id="moreInfoError"></span>
         </label>
-
+<!--        Option to submit or reset form-->
         <button type="submit">Submit</button>
         <button type="reset">Reset</button>
     </form>
 </div>
+<!--Link to bootstrap for NAVBAR-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<!--Link to JS file that handles form-->
 <script src="script.js"></script>
 </body>
 
