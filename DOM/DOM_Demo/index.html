@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dom_Demo</title>
+</head>
+<body>
+<h1>Avengers</h1>
+<h1>X-Men</h1>
+<form action="/cerebro">
+    <label for="First_name">First Name:</label>
+    <input type="text" name="Fname" id="first_name">
+    <br/><br/>
+</form>
+<script>
+    const rosterHeader = document.querySelector("h1");
+    rosterHeader.addEventListener("click", (event)=>{
+        console.log("You clicked the title.");
+        rosterHeader.textContent = "Avengers Assemble!";
+    })
+</script>
+
+
+<ul>
+    <li id="teamLeader">Wolverine</li>
+    <li class="mutant">Cyclops</li>
+    <li class="mutant">ShadowCat</li>
+    </ul>
+<input type="password" name="pass_word" id="pw">
+<label for="pw">Password</label>
+
+<script>
+   let input = document.getElementById("pw");
+   let inputType = input.type;
+   console.log(inputType);
+   input.type = "number";
+
+
+
+
+
+let xmenTeamLeader = document.getElementById("teamLeader");
+console.log(xmenTeamLeader)
+
+let mutants = document.getElementsByClassName("mutant");
+console.log(mutants); //calls all mutants classes
+console.log(mutants[1]); //use this if you want to grab a specific mutant.
+let allXmen = document.getElementsByTagName("li"); //grabs all <li items
+console.log(allXmen)
+let selectedXmen = document.querySelector(".mutant"); //querySelector grabs the first item in the array
+console.log(selectedXmen)
+//let allTeams = document.querySelectorAll("h1"); // querySelectorAll grabs all item in array
+
+let allTeams = document.querySelectorAll("h1");
+console.log(allTeams)
+allTeams[1].textContent = "New Mutants";
+allTeams[0].style.color = "red";
+allTeams[0].style.border = "green 3px solid";
+allTeams[0].style.fontSize = "48px";
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+    background-color: red;
+}
+body{
+}
+/*p {*/
+
+/*    background-color: orangered;*/
+/*    !*You can isolate margins by using the long way*!*/
+/*    padding-top: 10px;*/
+/*    padding-bottom: 10px;*/
+/*    padding-right: 10px;*/
+/*    padding-left: 10px;*/
+/*    !*padding: 10px 20px 30px; !*This allows you to still add padding in one line *!*!*/
+/*    border: dashed blue;*/
+/*    !*border-width: 20px;*!*/
+/*    !*margin: 100px 500px;*!*/
+
+/*}*/
+
+/*Many property short cuts
+background
+what we really are saying is:
+background: red url("img_tree.gif") no-repeat fixed center;*/
+
+/*Today we leared about CSS, how to implement border styles, color, margins, etc
+Learned how users see the webpage by using the emulator control
+learned how developers can edit a webpage by using the developer tool icon
+in the inspect website page.
+Went over different echelons of coding in HTML (GrandParent, Parent, Child, Cousin etc..*/
+/*Learned about goole fonts (Font Family: Sans-serif*/
+p {
+    border: blue ridge 10px;
+    width: 50%;
+    margin: 50px auto;
+    font-family: "Henny Penny", system-ui;
+}
+

@@ -1,0 +1,12 @@
+//This is how you create a new file using TS
+//You can create new directories
+// The build folder is what will be hosted
+
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "CommonJS",
+    "outDir": "./build"
+  },
+  "include": [".source/**/*.ts"],
+}

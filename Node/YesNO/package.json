@@ -1,0 +1,18 @@
+{
+  "name": "yesno",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "requirejs": "^2.3.7",
+    "yes-no": "^0.0.1",
+    "yes-no-words": "^3.0.0"
+  }
+}

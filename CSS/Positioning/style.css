@@ -1,0 +1,57 @@
+.div1 {
+    height: 200px;
+    width: 200px;
+    background: green;
+    position: relative;
+    top: -80px;
+    left: -100px;
+    /*display: inline-block;*/
+}
+.div2 {
+    height: 2000px;
+    width: 2000px;
+    background: blue;
+    /*display: inline-block;*/
+}
+.container{
+    height: 1000px;
+    width: 1000px;
+    background-color: grey;
+    position: relative;
+}
+.inner{
+    height: 100px;
+    width: 100px;
+    background: red;
+    position: absolute;
+    top: 500px;
+    left: 500px;
+    right: 500px;
+}
+.inner1{
+    height: 100px;
+    width: 100px;
+    background: black;
+    position: absolute;
+    top: 500px;
+    left: 400px;
+}
+.fa-solid.fa-bolt{
+    height: 20px;
+    width: 200px;
+    position: absolute;
+    top: 10px;
+    left: -50px;
+    font-size: 80px;
+
+}
+.fa-solid.fa-bolt {
+    height: 20px;
+    width: 200px;
+    position: absolute;
+    top: 10px;
+    left: -50px;
+    font-size: 80px;
+}
+
+

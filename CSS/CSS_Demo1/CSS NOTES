@@ -1,0 +1,10 @@
+Selectors:
+tag selectors = p, img, h1
+id selector = #nameOfld, #constantin
+
+
+Combinators?:
+tag and id =
+p#constantin
+p #constantin
+p, #constantin

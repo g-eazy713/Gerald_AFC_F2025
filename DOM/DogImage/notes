@@ -1,0 +1,33 @@
+ALL HTTP Request
+1) Utilize the endpoint
+2) Receive Data
+3) If good: parse it
+4) If no good: throw error
+5) Use parse data
+6) Handle Errors
+
+Example:
+Fetch Scaffolding
+1) utilize the endpoint
+2) receive data
+3) If good - parse data
+4) else, throw error
+  .then(incoming data)
+5) do something with parsed data
+  .then(parseData)
+6) handle errors
+  .catch()errors
+  .finally()
+
+
+Axios scaffolding example
+1) utilize an endpoint
+  axios.get(url)
+2) receive data
+  3) if good - parse data
+  4) else, throw error
+  5) do something with parsed data
+.then(parseData)
+  6) handle errors
+.catch()errors
+.finally()
