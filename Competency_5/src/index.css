@@ -1,0 +1,23 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fff8f0;
+}
+
+.menu-page {
+    background-color: #fff3e6;
+    min-height: 100vh;
+    padding-top: 2rem;
+}
+
+.hiring-page {
+    background-color: #f0f8ff;
+    min-height: 100vh;
+    padding-top: 2rem;
+}
+
+.hiring-page .card {
+    background-color: #ffffff;
+}
+
